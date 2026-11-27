@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { Mail, MapPin, Send } from 'lucide-react';
-import { FaFacebookMessenger } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin } from 'react-icons/fa';
 import './Contact.css';
 import usePageTitle from '../usePageTitle';
 
@@ -140,20 +140,38 @@ function Contact() {
                                 </div>
                             </div>
 
-                            {/* MESSENGER */}
+                            {/* LINKEDIN */}
                             <div className="contact-info-card">
                                 <div className="contact-info-icon">
-                                    <FaFacebookMessenger size={24} />
+                                    <FaLinkedin size={24} />
                                 </div>
 
                                 <div>
-                                    <h3>Messenger</h3>
+                                    <h3>LinkedIn</h3>
+                                    <a
+                                        href="https://www.linkedin.com/in/mark-aguilus-magno"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Visit my LinkedIn Profile
+                                    </a>
+                                </div>
+                            </div>
+
+                            {/* FACEBOOK */}
+                            <div className="contact-info-card">
+                                <div className="contact-info-icon">
+                                    <FaFacebook size={24} />
+                                </div>
+
+                                <div>
+                                    <h3>Facebook</h3>
                                     <a 
                                         href="https://www.facebook.com/markaguilus.magno" 
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        Mark Aguilus Magno
+                                        Visit my Facebook Profile
                                     </a>
                                 </div>
                             </div>
