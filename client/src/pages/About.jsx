@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
 import './About.css';
+import usePageTitle from '../usePageTitle';
 
 function About() {
+
+    usePageTitle('About Me | Mark Magno');
+
     return (
         <main className="about-page">
 

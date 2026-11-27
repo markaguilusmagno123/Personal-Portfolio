@@ -5,8 +5,11 @@ import './Projects.css';
 import ProjectModal from '../components/ProjectModal';
 import spendrHomepage from '../assets/projects/spendr/login.png';
 import abieraHomepage from '../assets/projects/abiera-acupuncture/homepage.png'
+import usePageTitle from '../usePageTitle';
 
 function Projects() {
+    
+    usePageTitle('My Projects | Mark Magno');
 
     const [selectedProject, setSelectedProject] = useState(null);
 

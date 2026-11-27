@@ -12,8 +12,12 @@ import {
     Settings
 } from 'lucide-react';
 import './Services.css';
+import usePageTitle from '../usePageTitle';
 
 function Services() {
+
+    usePageTitle('Services | Mark Magno');
+
     return (
         <main className="services-page">
 

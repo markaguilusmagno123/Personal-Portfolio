@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
+import usePageTitle from '../usePageTitle';
 
 function Home() {
+
+    usePageTitle('Mark Magno | Web Developer');
+
     return (
         <main className="home">
 

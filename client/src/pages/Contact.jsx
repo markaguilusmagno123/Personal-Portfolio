@@ -3,8 +3,12 @@ import axios from 'axios';
 import { Mail, MapPin, Send } from 'lucide-react';
 import { FaFacebookMessenger } from 'react-icons/fa';
 import './Contact.css';
+import usePageTitle from '../usePageTitle';
 
 function Contact() {
+
+    usePageTitle('Contact Me | Mark Magno');
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
