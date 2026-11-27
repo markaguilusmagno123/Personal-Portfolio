@@ -1,0 +1,114 @@
+.navbar {
+    width: 100%;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 1.2;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.navbar-logo h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.navbar-logo span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--accent-light);
+    letter-spacing: 1px;
+    margin-top: 7px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: var(--accent-light);
+}
+
+.navbar-links a.active {
+    color: var(--accent-light);
+}
+
+/* HAMBURGER BUTTON */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* MOBILE NAVIGATION */
+@media (max-width: 768px) {
+
+    .navbar-container {
+        position: relative;
+        padding: 16px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+
+        background-color: var(--bg-secondary);
+        border-bottom: 1px solid var(--border-color);
+        padding: 10px 20px;
+    }
+
+    .navbar-links.open {
+        display: flex;
+    }
+
+    .navbar-links a {
+        width: 100%;
+        padding: 14px 0;
+    }
+}
